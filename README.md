@@ -35,6 +35,10 @@ git clone https://github.com/frankaemika/franka_ros.git
 git clone https://github.com/franzesegiovanni/franka_human_friendly_controllers.git
 cd .. 
 catkin build -DMAKE_BUILD_TYPE=Release -DFranka_DIR:PATH=~/libfranka/build
+
+catkin_make -DMAKE_BUILD_TYPE=Release -DFranka_DIR:PATH=/asl_libs/libfranka/build
+
+
 ```
 To check the compatibility of the franka ros and the libfranka, please give a look [here](https://frankaemika.github.io/docs/compatibility.html).
 
